@@ -11,6 +11,7 @@
 }
 body {
     background-color: #dfdfdf;
+    cursor: pointer;
 }
 
 .center-center {
@@ -73,6 +74,11 @@ body {
   height: 80%;
   border-radius: 50%;
   object-fit: cover;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.ava img:hover {
+  transform: scale(1.08);
 }
 .job-title {
   font-size: 14px;
@@ -95,10 +101,16 @@ body {
   display: flex;
   align-items: center;
   margin: 5px 0;
+  transition: 0.2s;
 }
 .background-item i {
   color: var(--color1);
   margin-right: 10px;
+}
+.background-item:hover {
+  border: 2px solid var(--color1);
+  border-radius: 7px;
+  padding: 2px 5px;
 }
 .it-interests-box {
   width: 100%;

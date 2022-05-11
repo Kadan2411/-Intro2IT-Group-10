@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  //border: 1px solid red;
 }
 :root {
   --color1: #ec4668;
@@ -48,6 +47,7 @@ body {
 }
 .page-subtitle-container {
   width: 500px;
+  padding: 0 10px;
 }
 .team-member-area {
   position: relative;
@@ -97,6 +97,26 @@ body {
   margin: 5px 0;
 }
 .background-item i {
-  color: black;
+  color: var(--color1);
   margin-right: 10px;
+}
+.it-interests-box {
+  width: 100%;
+  background-color: var(--color1);
+  border-radius: 7px;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+.it-interests-title {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 2px 5px;
+  text-align: center;
+}
+.it-interests-box p {
+  margin-left: 5px;
+}
+.it-interests-box:hover {
+  background-color: #f66280;
 }

@@ -8,6 +8,7 @@
 }
 :root {
   --color1: #ec4668;
+  --color2: #959595;
 }
 body {
     background-color: #dfdfdf;
@@ -22,7 +23,10 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px)
 }
-
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 .title {
   font-size: 36px;
   font-weight: 600;
@@ -48,6 +52,8 @@ body {
 .team-member-area {
   position: relative;
   margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
   border-radius: 7px;
 }
 .team-member-item {
@@ -55,4 +61,40 @@ body {
   margin: 5px 10px;
   padding: 5px 10px;
   border-radius: 7px;
+  overflow: hidden;
+}
+
+
+.ava {
+  margin: 12px auto;
+}
+.ava img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.job-title {
+  font-size: 14px;
+  color: var(--color2);
+  font-weight: 400;
+}
+.name {
+  font-size: 24px;
+  color: var(--color1);
+  font-weight: 600;
+}
+.snumber {
+  font-size: 16px;
+  color: var(--color2);
+}
+.background {
+  margin-top: 6px;
+}
+.background-item {
+  display: flex;
+
+}
+.background-item i {
+  color: black;
 }

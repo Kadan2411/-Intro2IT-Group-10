@@ -10,9 +10,11 @@
   --color2: #959595;
 }
 body {
-    background-color: #dfdfdf;
+  background-color: #dfdfdf;
 }
-
+footer {
+  padding: 20px 0;
+}
 .center-center {
   display: flex;
   justify-content: center;
@@ -54,6 +56,7 @@ body {
   margin-top: 25px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 25px;
   border-radius: 7px;
 }
 .team-member-item {
@@ -62,7 +65,7 @@ body {
   padding: 5px 20px;
   border-radius: 7px;
   overflow: hidden;
-  height: 440px;
+  height: 530px;
 }
 
 
@@ -132,4 +135,27 @@ body {
 }
 .it-interests-box:hover {
   background-color: #f66280;
+}
+.career-plan {
+  height: 80px;
+  margin-top: 2px;
+  flex-direction: column;
+  border: 2px solid var(--color1);
+  border-radius: 7px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.team-process-box {
+  margin-left: 50px;
+  margin-right:50px;
+  margin-top: 10px;
+  border: 2px solid var(--color1);
+  padding: 5px 10px;
+  border-radius: 7px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.team-process-box:hover {
+  background-color: var(--color1);
+  color: white;
 }
